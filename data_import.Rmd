@@ -1,0 +1,26 @@
+---
+title: "Data Import"
+output: github_document
+---
+
+## to insert this code chunk below, press "option, command, i"
+```{r setup}
+library(tidyverse)
+```
+
+## Read in some data
+
+Read in the litters dataset.
+
+```{r}
+litters_df = read_csv("/Users/rachellemay/Desktop/data_wrangling_1/data/FAS_litters.csv")
+litters_df = janitor :: clean_names(litters_df)
+```
+
+## first step of code chunk: this above is a relative path for importing data
+## second step: clean up data import with clean_names function; in order to make command work use janitor :: function()
+
+## Take a look at the data
+
+
+
