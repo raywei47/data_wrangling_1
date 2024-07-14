@@ -22,5 +22,27 @@ litters_df = janitor :: clean_names(litters_df)
 
 ## Take a look at the data
 
+Printing in the console. 
+
+```{r}
+litters_df
+
+```
+## head function"() gives first 6 rows of dataset
+
+```{r}
+head(litters_df)
+```
+## tail function () gives last 6 rows
+```{r}
+tail(litters_df)
+```
+## skim gives you a rundown- kind of handy but a little gimmicky
+
+```{r}
+skimr :: skim(litters_df)
+```
+## view function is better bc opens new window and allows you to interact w dataset
+## avoid putting view in R markdown tho
 
 
