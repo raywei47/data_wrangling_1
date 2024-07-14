@@ -142,3 +142,24 @@ Data summary
 ## view function is better bc opens new window and allows you to interact w dataset
 
 ## avoid putting view in R markdown tho
+
+# Options to read_csv
+
+## “skip = 10” means skip 10 rows of dataset
+
+``` r
+litters_df = read_csv("/Users/rachellemay/Desktop/data_wrangling_1/data/FAS_litters.csv", skip = 10, col_names = FALSE)
+```
+
+    ## Rows: 40 Columns: 8
+    ## ── Column specification ────────────────────────────────────────────────────────
+    ## Delimiter: ","
+    ## chr (2): X1, X2
+    ## dbl (6): X3, X4, X5, X6, X7, X8
+    ## 
+    ## ℹ Use `spec()` to retrieve the full column specification for this data.
+    ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+## you could also do read_csv(directory, na = c(““,”NA”, “.”, “999”) so that R knows those are missing values in dataset
+
+check out ‘?read_csv()’ for more info

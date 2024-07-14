@@ -46,3 +46,11 @@ skimr :: skim(litters_df)
 ## avoid putting view in R markdown tho
 
 
+# Options to read_csv
+## "skip = 10" means skip 10 rows of dataset
+```{r}
+litters_df = read_csv("/Users/rachellemay/Desktop/data_wrangling_1/data/FAS_litters.csv", skip = 10, col_names = FALSE)
+```
+## you could also do read_csv(directory, na = c("", "NA", ".", "999") so that R knows those are missing values in dataset
+
+check out '?read_csv()' for more info
