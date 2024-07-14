@@ -2,6 +2,10 @@
 title: "Data Import"
 output: github_document
 ---
+```{r}
+setwd("/Users/rachellemay/Desktop/data_wrangling_1")
+```
+
 
 ## to insert this code chunk below, press "option, command, i"
 ```{r setup}
@@ -54,3 +58,22 @@ litters_df = read_csv("/Users/rachellemay/Desktop/data_wrangling_1/data/FAS_litt
 ## you could also do read_csv(directory, na = c("", "NA", ".", "999") so that R knows those are missing values in dataset
 
 check out '?read_csv()' for more info
+
+## other file formats
+
+Read in an excel file
+
+```{r}
+library(readxl)
+mlb_df = read_excel("/Users/rachellemay/Desktop/data_wrangling_1/data/mlb11.xlsx", range = "A1:F7"")
+mlb_df
+```
+
+Read in a SAS file. 
+
+```{r}
+library(haven)
+pulse_df = read_sas("/Users/rachellemay/Desktop/data_wrangling_1/data/public_pulse_data.sas7bdat")
+pulse_df
+```
+
