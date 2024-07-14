@@ -77,3 +77,11 @@ pulse_df = read_sas("/Users/rachellemay/Desktop/data_wrangling_1/data/public_pul
 pulse_df
 ```
 
+## comparison with Base R
+
+what about 'read.csv'...?
+## never use read.csv!!!
+
+## it will give entire dataset, weird col names, harder to manage
+
+
